@@ -4,8 +4,10 @@
   --background: #ffffff;
   --foreground: #171717;
   /* Navbar Themes */
-  --navbar-bg: #f8f8f8;
-  --navbar-text: #333333;
+  --navbar-bg: #181831;
+  --navbar-text: #dddcdc;
+  /* Main Page Themes */
+  --section-text: #f8f8f8;
 }
 
 body {
