@@ -16,7 +16,6 @@ export default function StarsBackground({ className = "", options = {} }) {
   return (
     // wrapper is fixed via `className` from layout; just don’t block clicks
     <div className={`pointer-events-none ${className}`}>
-      {/* Fill the parent instead of using vh */}
       <div className="w-full h-full">
         {ready && (
           <Particles
