@@ -30,6 +30,7 @@ export default function Page() {
     <main className="font-sans">
       <motion.section
         variants={container}
+        suppressHydrationWarning={true}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.6 }}
@@ -50,13 +51,14 @@ export default function Page() {
         </motion.h1>
 
         <motion.h2 variants={itemSlide} className="mt-2 text-2xl font-semibold opacity-90">
-          Full‑Stack Developer
+          {`Full‑Stack Developer`}
         </motion.h2>
       </motion.section>
 
 
       <motion.section
         id="introduction"
+        suppressHydrationWarning={true}
         variants={container}
         initial="hidden"
         whileInView="visible"
@@ -71,21 +73,22 @@ export default function Page() {
           Overview
         </motion.p>
         <motion.p variants={itemSlide} className="mt-4 text-lg max-w-3xl text-center">
-         🧑🏻‍💻  I'm a Computer Science student with a passion for software development. I enjoy creating innovative solutions and learning new technologies.
+         🧑🏻‍💻  {`I'm a Computer Science student with a passion for software development. I enjoy creating innovative solutions and learning new technologies.`}
         </motion.p>
         <motion.p variants={itemSlide} className="mt-4 text-lg max-w-3xl text-center">
-         📖 I am a Junior at the University of Texas at Dallas, pursuing a Bachelor's degree in Computer Science.
+         📖 {`I am a Junior at the University of Texas at Dallas, pursuing a Bachelor's degree in Computer Science.
           I specialize in web development frameworks like React and Node.js, 
-          and I have a strong foundation in programming languages such as JavaScript, Python, and C++.
+          and I have a strong foundation in programming languages such as JavaScript, Python, and C++.`}
         </motion.p>
         <motion.p variants={itemSlide} className="mt-4 text-lg max-w-3xl text-center">
-         🛠️ I enjoy building user-friendly interfaces and robust back-end systems.
-         My goal is to deliver high-quality software solutions that implement AI to make the user's experience more interactive and efficient.
+         🛠️ {`I enjoy building user-friendly interfaces and robust back-end systems.`}
+         {`My goal is to deliver high-quality software solutions that implement AI to make the user's experience more interactive and efficient.`}
         </motion.p>
       </motion.section>
 
       <motion.section
         id="projects"
+        suppressHydrationWarning={true}
         variants={container}
         initial="hidden"
         whileInView="visible"
@@ -101,6 +104,7 @@ export default function Page() {
 
       <motion.section
         id="timeline"
+        suppressHydrationWarning={true}
         variants={container}
         initial="hidden"
         whileInView="visible"
@@ -115,6 +119,7 @@ export default function Page() {
 
       <motion.section
         id="contact"
+        suppressHydrationWarning={true}
         variants={container}
         initial="hidden"
         whileInView="visible"
