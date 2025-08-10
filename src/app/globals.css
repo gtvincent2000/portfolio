@@ -12,6 +12,7 @@
   /* Project Card Themes */
   --project-card-bg: #1e1e2f;
   --project-card-border: #3e3e5c;
+  --link-hover: #7777d1;
 }
 
 body {

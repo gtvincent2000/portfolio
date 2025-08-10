@@ -2,11 +2,98 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Timeline from "@/components/Timeline";
 
-
+// Animation variants
 const container = { hidden:{opacity:1}, visible:{ opacity:1, transition:{ staggerChildren:0.15, delayChildren:0.05 } } };
 const itemSlide = { hidden:{ y:20, opacity:0 }, visible:{ y:0, opacity:1, transition:{ duration:0.45 } } };
 const itemScale = { hidden:{ scale:0.9, opacity:0 }, visible:{ scale:1, opacity:1, transition:{ duration:0.55 } } };
+
+// Timeline items
+const timelineItems = [
+  {
+    date: "2019 → 2023",
+    title: "US Marine Corps",
+    tags: ["Leadership", "Teamwork", "Communication"],
+    body:
+      "Developed strong leadership and teamwork skills while serving in the US Marine Corps Infantry. Focused on discipline and effective communication.",
+    media: (
+      <img
+        src="/assets/usmc_pic.jpg"
+        alt="US Marine Corps"
+        className="w-full max-w-md rounded-lg shadow"
+      />
+    )
+  },
+  {
+    date: "Fall 2023 → Spring 2025",
+    title: "Austin Community College",
+    tags: ["Data Structures", "C++", "Python", "GPA: 3.61"],
+    body:
+      "Gained a solid foundation in computer science principles such as algorithms and data structures.",
+  },
+  {
+    date: "Summer 2025",
+    title: "Eitan‑GO — AI Vocab Notebook",
+    tags: ["Next.js", "Tailwind", "OpenAI", "Supabase"],
+    body:
+      "Self-taught React and Next js. Built a full‑stack app with AI‑generated sentences, translations, and quiz study flows. Deployed on Vercel; added auth and dark mode.",
+    media: (
+      <video
+        src="/assets/eitan-go-how-to.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full max-w-md rounded-lg shadow"
+      />
+    ),
+  },
+  {
+    date: "Summer 2025",
+    title: "Portfolio v1.0 Launch",
+    tags: ["Next.js 15", "Animations", "Particles"],
+    body:
+      "Interactive hero, scroll‑reveals, particles background, responsive project cards. Optimized for mobile performance.",
+  },
+  {
+    date: "Fall 2025",
+    title: "UT Dallas — Junior Year (CS)",
+    tags: ["Data Structures", "Web Dev", "C++", "JS"],
+    body:
+      "Will focus on modern front‑end patterns (App Router, Framer Motion) and back‑end fundamentals. Building portfolio polish & internship prep.",
+  },
+  {
+    date: "2026 (Goal)",
+    title: "Software Engineering Internship",
+    tags: ["Full‑stack", "AI Integration"],
+    body:
+      "Seeking a role that combines full-stack development with AI-driven features, in a collaborative, globally-minded team environment. Building skills to contribute to software projects with international reach and diverse work cultures.",
+  },
+  {
+    date: "2027",
+    title: "Complete B.S. in Computer Science (UTD)",
+    tags: ["Full‑stack", "AI Integration", "Bachelor's Degree"],
+    body:
+      "Graduating with strong foundations in software engineering, AI integration, and cross-cultural communication. Preparing for a Master's degree to deepen expertise in advanced software systems and AI.",
+  },
+  {
+    date: "2027 → 2029",
+    title: "Master’s Degree in Computer Science",
+    tags: ["Full‑stack", "AI Integration", "Master's Degree"],
+    body:
+      "Specializing in AI and scalable systems, with a focus on applications for international markets. Building a portfolio of projects that integrate multilingual and cross-cultural user experiences.",
+  },
+  {
+    date: "Long-Term Goal",
+    title: "Software Engineering in Japan",
+    tags: ["Full‑stack", "AI Integration", "Master's Degree"],
+    body:
+      "Pursuing opportunities with globally-minded companies in Japan, ideally American or European-headquartered, to contribute to innovative projects while fostering healthy, balanced workplace culture.",
+  },
+
+];
 
 export default function Page({ id, center=false, children }) {
   return(
@@ -123,12 +210,21 @@ export default function Page({ id, center=false, children }) {
                   The app uses AI to generate sentences, translate words and sentences, and provide quizzes to help users learn vocabulary effectively.
                 </p>
 
-                {/* Optional: bullets / tech stack / links */}
+                {/* bullets / tech stack / links */}
                 <ul className="mt-4 list-disc list-inside text-sm opacity-90">
                   <li>Next.js 14 · React · Tailwind · Supabase</li>
+                  <li>Google OAuth</li>
                   <li>AI sentence generation & translations</li>
                   <li>Vocab notebook + quizzes</li>
                 </ul>
+
+                <Link
+                  href="https://eitan-go.vercel.app/"
+                  target="_blank"
+                  className="mt-4 inline-block italic underline hover:text-link-hover transition-colors"
+                >
+                  Project Link
+                </Link>
 
                 <div className="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
                   <span className="rounded-full px-3 py-1 text-xs border border-white/20">#NextJS</span>
@@ -147,13 +243,13 @@ export default function Page({ id, center=false, children }) {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once:false, amount:0.3, margin:"-6% 0px" }}
+        viewport={{ once:false, amount:0.0, margin:"-6% 0px" }}
         className="flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20"
         style={{ color: "var(--section-text)" }}
       >
         <div className="mx-auto max-w-5xl px-6">
           <motion.h2 variants={itemSlide} className="text-2xl md:text-3xl font-semibold text-center">
-            Timeline
+            <Timeline items={timelineItems} />
           </motion.h2>
         </div>
       </motion.section>
