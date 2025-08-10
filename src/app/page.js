@@ -53,7 +53,7 @@ export default function Page({ id, center=false, children }) {
             Introduction
           </motion.h1>
 
-          <motion.p variants={itemSlide} className="mt-3 text-sm md:text-base text-gray-400">
+          <motion.p variants={itemSlide} className="mt-3 text-sm md:text-base text-gray-400 italic">
             Overview
           </motion.p>
 
@@ -88,6 +88,56 @@ export default function Page({ id, center=false, children }) {
           <motion.h2 variants={itemSlide} className="text-2xl md:text-3xl font-semibold text-center">
             Projects
           </motion.h2>
+          <motion.div
+            variants={itemSlide}
+            className="rounded-lg mt-10 p-6 sm:p-8 max-w-5xl mx-auto border"
+            style={{
+              backgroundColor: "var(--project-card-bg)",
+              borderColor: "var(--project-card-border)",
+              borderWidth: "1px",
+            }}
+          >
+            {/* Title */}
+            <motion.h3 className="text-2xl font-semibold italic text-center">
+              Eitan-GO
+            </motion.h3>
+
+            {/* Responsive content area */}
+            <div className="mt-6 grid gap-6 md:gap-8 md:grid-cols-2 md:items-center">
+              {/* Video (left on desktop, full width on mobile) */}
+              <motion.video
+                src="/assets/eitan-go-how-to.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full rounded-lg shadow-lg"
+              />
+
+              {/* Description (right on desktop) */}
+              <motion.div className="text-center md:text-left text-gray-300 leading-relaxed">
+                <p className="text-lg">
+                  Eitan-GO is a Japanese Vocabulary notebook for English speakers learning Japanese.
+                </p>
+                <p className="mt-3">
+                  The app uses AI to generate sentences, translate words and sentences, and provide quizzes to help users learn vocabulary effectively.
+                </p>
+
+                {/* Optional: bullets / tech stack / links */}
+                <ul className="mt-4 list-disc list-inside text-sm opacity-90">
+                  <li>Next.js 14 · React · Tailwind · Supabase</li>
+                  <li>AI sentence generation & translations</li>
+                  <li>Vocab notebook + quizzes</li>
+                </ul>
+
+                <div className="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+                  <span className="rounded-full px-3 py-1 text-xs border border-white/20">#NextJS</span>
+                  <span className="rounded-full px-3 py-1 text-xs border border-white/20">#OpenAI</span>
+                  <span className="rounded-full px-3 py-1 text-xs border border-white/20">#Tailwind</span>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
       </motion.section>
  

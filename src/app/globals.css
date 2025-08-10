@@ -9,6 +9,9 @@
   /* Main Page Themes */
   --section-text: #f8f8f8;
   --image-border: #050364;
+  /* Project Card Themes */
+  --project-card-bg: #1e1e2f;
+  --project-card-border: #3e3e5c;
 }
 
 body {
