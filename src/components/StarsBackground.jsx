@@ -21,7 +21,7 @@ export default function StarsBackground({ className = "", options = {} }) {
           <Particles
             id="tsparticles"
             options={{
-              fullScreen: { enable: false, zIndex: 0 }, // stay inside this div
+              fullScreen: { enable: true, zIndex: 0 }, 
               background: { color: "transparent" },
               fpsLimit: 60,
               particles: {
