@@ -37,7 +37,7 @@ function TimelineItem({ i, item }) {
         }}
         className={clsx(
           "mt-6 rounded-lg border border-white/10 bg-white/5 p-5 backdrop-blur transform-gpu will-change-transform",
-          "pl-16 md:pl-6",
+          "ml-12 md:ml-0",
           "md:mt-8 md:col-span-5 md:px-6",
           i % 2 === 0 ? "md:col-start-1 md:text-right md:pr-10" : "md:col-start-8 md:text-left md:pl-10",
         )}
