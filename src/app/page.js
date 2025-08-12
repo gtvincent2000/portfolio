@@ -177,12 +177,7 @@ export default function Page({ id, center=false, children }) {
           </motion.h2>
           <motion.div
             variants={itemSlide}
-            className="rounded-lg mt-10 p-6 sm:p-8 max-w-5xl mx-auto border"
-            style={{
-              backgroundColor: "var(--project-card-bg)",
-              borderColor: "var(--project-card-border)",
-              borderWidth: "1px",
-            }}
+            className="rounded-lg bg-white/5 backdrop-blur border border-white/10 p-5"
           >
             {/* Title */}
             <motion.h3 className="text-2xl font-semibold italic text-center">
