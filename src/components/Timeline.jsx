@@ -15,6 +15,9 @@ const itemScale = {
 };
 
 function TimelineItem({ i, item }) {
+
+  const isFuture = item.isFuture;
+
   return (
     <li className="relative md:grid md:grid-cols-12 md:gap-6 md:min-h-[140px]">
       {/* Dot */}
@@ -48,11 +51,21 @@ function TimelineItem({ i, item }) {
           "ml-12 md:ml-0",
           "md:mt-8 md:col-span-5 md:px-6",
           i % 2 === 0 ? "md:col-start-1 md:text-right md:pr-10" : "md:col-start-8 md:text-left md:pl-10",
+          isFuture
+            ? "bg-white/3 border border-dashed border-yellow-300/30 text-gray-300"
+            : "bg-white/5 border border-white/10 text-white"
         )}
         style={{ color: "var(--section-text)" }}
       >
         <p className="text-sm opacity-70">{item.date}</p>
-        <h3 className="mt-1 text-xl font-semibold">{item.title}</h3>
+        <h3 className="mt-1 text-xl font-semibold flex items-center gap-2">
+          {item.title}
+          {item.isFuture && (
+            <span className="rounded-full bg-yellow-500/20 text-yellow-400 text-xs px-2 py-0.5">
+              Upcoming
+            </span>
+          )}
+        </h3>
 
         {item.tags?.length ? (
           <div className={clsx("mt-2 flex flex-wrap gap-2", i % 2 === 0 ? "justify-end" : "justify-start")}>

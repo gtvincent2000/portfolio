@@ -24,7 +24,8 @@ const timelineItems = [
         alt="US Marine Corps"
         className="w-full max-w-md rounded-lg shadow"
       />
-    )
+    ),
+    isFuture: false
   },
   {
     date: "Fall 2023 → Spring 2025",
@@ -32,6 +33,7 @@ const timelineItems = [
     tags: ["Data Structures", "C++", "Python", "GPA: 3.61"],
     body:
       "Gained a solid foundation in computer science principles such as algorithms and data structures.",
+    isFuture: false
   },
   {
     date: "Summer 2025",
@@ -49,6 +51,7 @@ const timelineItems = [
         className="w-full max-w-md rounded-lg shadow"
       />
     ),
+    isFuture: false
   },
   {
     date: "Summer 2025",
@@ -56,6 +59,7 @@ const timelineItems = [
     tags: ["Next.js 15", "Animations", "Particles"],
     body:
       "Interactive hero, scroll‑reveals, particles background, responsive project cards. Optimized for mobile performance.",
+    isFuture: false
   },
   {
     date: "Fall 2025",
@@ -63,6 +67,7 @@ const timelineItems = [
     tags: ["Data Structures", "Web Dev", "C++", "JS"],
     body:
       "Will focus on modern front‑end patterns (App Router, Framer Motion) and back‑end fundamentals. Building portfolio polish & internship prep.",
+    isFuture: true
   },
   {
     date: "2026 (Goal)",
@@ -70,6 +75,7 @@ const timelineItems = [
     tags: ["Full‑stack", "AI Integration"],
     body:
       "Seeking a role that combines full-stack development with AI-driven features, in a collaborative, globally-minded team environment. Building skills to contribute to software projects with international reach and diverse work cultures.",
+    isFuture: true
   },
   {
     date: "2027",
@@ -77,6 +83,7 @@ const timelineItems = [
     tags: ["Full‑stack", "AI Integration", "Bachelor's Degree"],
     body:
       "Graduating with strong foundations in software engineering, AI integration, and cross-cultural communication. Preparing for a Master's degree to deepen expertise in advanced software systems and AI.",
+    isFuture: true
   },
   {
     date: "2027 → 2029",
@@ -84,6 +91,7 @@ const timelineItems = [
     tags: ["Full‑stack", "AI Integration", "Master's Degree"],
     body:
       "Specializing in AI and scalable systems, with a focus on applications for international markets. Building a portfolio of projects that integrate multilingual and cross-cultural user experiences.",
+    isFuture: true
   },
   {
     date: "Long-Term Goal",
@@ -91,6 +99,7 @@ const timelineItems = [
     tags: ["Full‑stack", "AI Integration", "Master's Degree"],
     body:
       "Pursuing opportunities with globally-minded companies in Japan, ideally American or European-headquartered, to contribute to innovative projects while fostering healthy, balanced workplace culture.",
+    isFuture: true
   },
 
 ];
