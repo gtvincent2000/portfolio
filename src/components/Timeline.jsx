@@ -19,11 +19,14 @@ function TimelineItem({ i, item }) {
     <li className="relative md:grid md:grid-cols-12 md:gap-6 md:min-h-[140px]">
       {/* Dot */}
       <span
-        className="absolute top-[10px] left-4 -translate-x-1/2 z-10 h-3 w-3 rounded-full bg-white md:left-1/2"
+        className="absolute top-[10px] left-4 -translate-x-1/2 z-10 h-3 w-3 rounded-full bg-white md:left-1/2 md:-translate-x-1/2"
         aria-hidden
       />
       {/* Mobile spacer for dot alignment */}
-      <span className="absolute left-4 top-0 h-full w-[2px] bg-transparent md:hidden" aria-hidden />
+      <span
+        className="absolute left-4 -translate-x-1/2 top-0 h-full w-[2px] bg-transparent md:hidden"
+        aria-hidden
+      />
 
       {/* Card: animate each item independently */}
       <motion.div
