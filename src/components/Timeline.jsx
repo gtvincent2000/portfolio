@@ -19,7 +19,7 @@ function TimelineItem({ i, item }) {
     <li className="relative md:grid md:grid-cols-12 md:gap-6 md:min-h-[140px]">
       {/* Dot */}
       <span
-        className="absolute left-[16px] top-[10px] z-10 h-3 w-3 rounded-full bg-white md:left-1/2 md:-translate-x-1/2"
+        className="absolute top-[10px] left-4 -translate-x-1/2 z-10 h-3 w-3 rounded-full bg-white md:left-1/2"
         aria-hidden
       />
       {/* Mobile spacer for dot alignment */}
