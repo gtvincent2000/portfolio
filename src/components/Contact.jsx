@@ -163,7 +163,7 @@ export default function Contact() {
 
           <div className="mt-4">
             <HCaptcha
-              sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY || process.env.HCAPTCHA_SITEKEY}
+              sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
               onVerify={setCaptchaToken}
               ref={captchaRef}
               theme="dark"
