@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Timeline from "@/components/Timeline";
+import Contact from "@/components/Contact";
 
 // Animation variants
 const container = { hidden:{opacity:1}, visible:{ opacity:1, transition:{ staggerChildren:0.15, delayChildren:0.05 } } };
@@ -302,9 +303,7 @@ export default function Page({ id, center=false, children }) {
         style={{ color: "var(--section-text)" }}
       >
         <div className="mx-auto max-w-5xl px-6">
-          <motion.h2 variants={itemSlide} className="text-2xl md:text-3xl font-semibold text-center">
-            Contact
-          </motion.h2>
+          <Contact />
         </div>
       </motion.section>
     </main>
