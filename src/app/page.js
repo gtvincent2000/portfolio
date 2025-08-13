@@ -10,6 +10,36 @@ const container = { hidden:{opacity:1}, visible:{ opacity:1, transition:{ stagge
 const itemSlide = { hidden:{ y:20, opacity:0 }, visible:{ y:0, opacity:1, transition:{ duration:0.45 } } };
 const itemScale = { hidden:{ scale:0.9, opacity:0 }, visible:{ scale:1, opacity:1, transition:{ duration:0.55 } } };
 
+function ResumeButton({ size = "md", className = "" }) {
+  const sizes = {
+    sm: "px-3 py-1.5 text-sm",
+    md: "px-4 py-2 text-base",
+    lg: "px-5 py-2.5 text-lg",
+  };
+
+  return (
+    <motion.a
+      href="/assets/Gary_Vincent_Resume.pdf"
+      target="_blank"          
+      rel="noopener"
+      download                 
+      whileHover={{ y: -1, scale: 1.01 }}
+      whileTap={{ scale: 0.98 }}
+      className={`${sizes[size]} inline-flex items-center gap-2 rounded-lg
+                  bg-white/10 hover:bg-white/20 border border-white/20
+                  backdrop-blur text-white font-medium shadow-sm
+                  focus:outline-none focus:ring-2 focus:ring-white/40 ${className}`}
+      aria-label="Download résumé (PDF)"
+    >
+      {/* tiny icon */}
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" className="opacity-90">
+        <path fill="currentColor" d="M12 3v10.17l3.59-3.58L17 11l-5 5-5-5 1.41-1.41L11 13.17V3h1zM5 19h14v2H5z"/>
+      </svg>
+      Download Résumé
+    </motion.a>
+  );
+}
+
 // Timeline items
 const timelineItems = [
   {
@@ -166,6 +196,9 @@ export default function Page({ id, center=false, children }) {
           <motion.p variants={itemSlide} className="mt-4 text-lg">
             🛠️ {"I enjoy building user-friendly interfaces and robust back-end systems. "}
             {"My goal is to deliver high-quality software solutions that implement AI to make the user's experience more interactive and efficient."}
+          </motion.p>
+          <motion.p variants={itemSlide} className="mt-4 text-lg">
+            <ResumeButton size="md" className="mt-4" />
           </motion.p>
         </div>
       </motion.section>
