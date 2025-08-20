@@ -11,13 +11,20 @@ export default function Navbar() {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setDropdownOpen(false);
+            setDropdownOpen(false);
             }
         };
 
+        const handleScroll = () => {
+            setDropdownOpen(false);
+        };
+
         document.addEventListener("mousedown", handleClickOutside);
+        window.addEventListener("scroll", handleScroll);
+
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
