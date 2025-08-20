@@ -115,7 +115,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.3, once: false }}
-          className="mt-8 rounded-lg bg-white/5 backdrop-blur border border-white/10 p-6 md:p-8"
+          className="mt-8 rounded-lg bg-white/5 backdrop-blur border border-white/10 p-6 md:p-8 max-w-full overflow-x-auto"
         >
           {/* Honeypot (keep visible to bots but visually hidden) */}
           <label className="sr-only" htmlFor="company">Company</label>
@@ -161,7 +161,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 inline-block max-w-full">
             <HCaptcha
               sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
               onVerify={setCaptchaToken}

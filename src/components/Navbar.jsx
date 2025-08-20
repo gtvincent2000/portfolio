@@ -53,6 +53,41 @@ export default function Navbar() {
                         }}
                         >
                         <div className="flex flex-col gap-2 p-2">
+                            <div className= "font-semibold text-lg mb-2">
+                                Menu:
+                            </div>
+                            <a
+                                href="#home"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
+                            >
+                                Home
+                            </a>
+                            <a
+                                href="#introduction"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
+                            >
+                                Introduction
+                            </a>
+                            <a
+                                href="#projects"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
+                            >
+                                Projects
+                            </a>
+                            <a
+                                href="#timeline"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
+                            >
+                                Timeline
+                            </a>
+                            <a
+                                href="#contact"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
+                            >
+                                Contact
+                            </a>
+                            <br />
+
                             <div className="font-semibold text-lg mb-2">
                                 Links:
                             </div>
@@ -61,7 +96,7 @@ export default function Navbar() {
                                 href="https://www.linkedin.com/in/gary-vincent-ab1542290/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="underline hover:text-[var(--foreground)] transition-colors cursor-pointer"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
                             >
                                 LinkedIn
                             </a>
@@ -69,7 +104,7 @@ export default function Navbar() {
                                 href="https://github.com/gtvincent2000"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="underline hover:text-[var(--foreground)] transition-colors cursor-pointer"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
                             >
                                 GitHub
                             </a>

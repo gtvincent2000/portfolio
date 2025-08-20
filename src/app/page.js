@@ -299,7 +299,7 @@ export default function Page({ id, center=false, children }) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once:false, amount:0.3, margin:"-6% 0px" }}
-        className="flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20"
+        className="flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20 overflow-x-clip"
         style={{ color: "var(--section-text)" }}
       >
         <div className="mx-auto max-w-5xl px-6">

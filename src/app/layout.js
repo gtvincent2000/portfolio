@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-gray-900 text-gray-100">
+      <body className="antialiased bg-gray-900 text-gray-100 overflow-x-clip">
         {/* Background */}
         <div className="fixed inset-0 -z-10 bg-gradient-to-b from-[#171727] via-[#111827] to-black" />
 
