@@ -145,7 +145,7 @@ export default function Page({ id, center=false, children }) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once:false, amount:0.6 }}
-        className="py-10 md:py-14 pt-[20px] md:pt-[40px] flex flex-col items-center justify-center"
+        className="scroll-mt-30 py-10 md:py-14 pt-[20px] md:pt-[40px] flex flex-col items-center justify-center"
         style={{ color: "var(--section-text)" }}
       >
         <motion.img
@@ -172,7 +172,7 @@ export default function Page({ id, center=false, children }) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once:false, amount:0.35, margin:"-6% 0px" }}
-        className="py-10 md:py-14"
+        className="scroll-mt-30 py-10 md:py-14"
         style={{ color: "var(--section-text)" }}
       >
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -205,17 +205,80 @@ export default function Page({ id, center=false, children }) {
       </motion.section>
 
       <motion.section
+        id="skills"
+        variants={container}              
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.35, margin: "-6% 0px" }}
+        className="scroll-mt-30 py-10 md:py-14"
+        style={{ color: "var(--section-text)" }}
+      >
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <motion.h2 variants={itemSlide} className="text-3xl md:text-4xl font-bold">
+            Skills
+          </motion.h2>
+
+          <motion.div
+            role="list"
+            aria-label="Skill tags"
+            className="mt-4 flex flex-wrap justify-center gap-3"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.05, delayChildren: 0.1 }
+              }
+            }}
+          >
+            {[
+              "JavaScript (ES6+)",
+              "React",
+              "Next.js",
+              "Python",
+              "C++",
+              "Supabase",
+              "Tailwind CSS",
+              "Vercel",
+              "OpenAI API",
+              "Git/GitHub",
+              "OAuth",
+              "Responsive Design"
+            ].map((skill) => (
+              <motion.span
+                key={skill}
+                role="listitem"
+                className="px-4 py-2 rounded-full bg-white/10 border border-white/20
+                          backdrop-blur text-white text-sm shadow-sm
+                          transform-gpu origin-center"
+                variants={{
+                  hidden: { opacity: 0, y: 8, scale: 0.96 },
+                  visible: {
+                    opacity: 1, y: 0, scale: 1,
+                    transition: { type: "spring", stiffness: 260, damping: 24 }
+                  }
+                }}
+                whileHover={{ scale: 1.06 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {skill}
+              </motion.span>
+            ))}
+          </motion.div>
+        </div>
+      </motion.section>
+
+      <motion.section
         id="projects"
         suppressHydrationWarning={true}
         variants={container}
         initial="hidden"
         whileInView="visible"
         viewport={{ once:false, amount:0.3, margin:"-6% 0px" }}
-        className="flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20"
+        className="scroll-mt-30 flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20"
         style={{ color: "var(--section-text)" }}
       >
         <div className="mx-auto max-w-5xl px-6">
-          <motion.h2 variants={itemSlide} className="text-2xl md:text-3xl font-semibold text-center">
+          <motion.h2 variants={itemSlide} className="text-2xl md:text-3xl font-semibold text-center pb-4">
             Projects
           </motion.h2>
           <motion.div
@@ -282,7 +345,7 @@ export default function Page({ id, center=false, children }) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once:false, amount:0.0, margin:"-6% 0px" }}
-        className="flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20"
+        className="scroll-mt-30 flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20"
         style={{ color: "var(--section-text)" }}
       >
         <div className="mx-auto max-w-5xl px-6">
@@ -299,7 +362,7 @@ export default function Page({ id, center=false, children }) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once:false, amount:0.3, margin:"-6% 0px" }}
-        className="flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20 overflow-x-clip"
+        className="scroll-mt-30 flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20 overflow-x-clip"
         style={{ color: "var(--section-text)" }}
       >
         <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">

@@ -102,7 +102,7 @@ export default function Timeline({ items = [] }) {
       aria-label="Roadmap timeline"
     >
       <div className="mx-auto max-w-5xl px-6">
-        <h2 className="text-center text-3xl font-semibold md:text-left">Timeline / Roadmap</h2>
+        <h2 className="text-center text-3xl font-semibold">Timeline / Roadmap</h2>
 
         <div ref={trackRef} className="relative mt-10 md:mt-12">
           {/* Static spine */}

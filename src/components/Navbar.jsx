@@ -69,6 +69,12 @@ export default function Navbar() {
                                 Introduction
                             </a>
                             <a
+                                href="#skills"
+                                className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
+                            >
+                                Skills
+                            </a>
+                            <a
                                 href="#projects"
                                 className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
                             >
