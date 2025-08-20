@@ -50,14 +50,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-24 py-14 md:py-20" style={{ color: "var(--section-text)" }}>
-      <div className="mx-auto max-w-4xl px-6">
+    <section id="contact" className="scroll-mt-24 py-14 md:py-20 overflow-x-clip" style={{ color: "var(--section-text)" }}>
+      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
         <motion.h2
           variants={item}
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.4, once: false }}
-          className="text-3xl font-semibold text-center md:text-left"
+          className="text-3xl font-semibold text-center"
         >
           Contact
         </motion.h2>
@@ -68,7 +68,9 @@ export default function Contact() {
           viewport={{ amount: 0.4, once: false }}
           className="mt-4 text-center"
         >
-          Have questions or want to get in touch? Fill out the form below to reach out!
+          Have questions or want to get in touch?
+          <br />
+          Fill out the form below to reach out!
         </motion.p>
 
         {/* CTA buttons row */}
@@ -77,7 +79,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.4, once: false }}
-          className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start"
+          className="mt-6 flex flex-col sm:flex-row gap-3 justify-center"
         >
           {/* Phone button */}
           <a
@@ -115,7 +117,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.3, once: false }}
-          className="mt-8 rounded-lg bg-white/5 backdrop-blur border border-white/10 p-6 md:p-8 max-w-full overflow-x-auto"
+          className="mt-8 mx-auto w-full max-w-2xl rounded-lg bg-white/5 backdrop-blur border border-white/10 p-6 md:p-8"
         >
           {/* Honeypot (keep visible to bots but visually hidden) */}
           <label className="sr-only" htmlFor="company">Company</label>
@@ -161,13 +163,15 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mt-4 inline-block max-w-full">
-            <HCaptcha
-              sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
-              onVerify={setCaptchaToken}
-              ref={captchaRef}
-              theme="dark"
-            />
+          <div className="mt-4 w-full flex justify-center overflow-x-clip">
+            <div className="w-full max-w-full">
+              <HCaptcha
+                sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
+                onVerify={setCaptchaToken}
+                ref={captchaRef}
+                theme="dark"
+              />
+            </div>
           </div>
 
           <div className="mt-6 flex justify-end">

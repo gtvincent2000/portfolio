@@ -89,7 +89,7 @@ const timelineItems = [
     title: "Portfolio v1.0 Launch",
     tags: ["Next.js 15", "Animations", "Particles"],
     body:
-      "Interactive hero, scroll‑reveals, particles background, responsive project cards. Optimized for mobile performance.",
+      "Built a portfolio with an interactive hero, scroll‑reveals, particles background, responsive project cards. Optimized for mobile performance.",
     isFuture: false
   },
   {
@@ -302,7 +302,7 @@ export default function Page({ id, center=false, children }) {
         className="flex flex-col min-h-[50svh] md:min-h-[40vh] py-12 md:py-20 overflow-x-clip"
         style={{ color: "var(--section-text)" }}
       >
-        <div className="mx-auto max-w-5xl px-6">
+        <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
           <Contact />
         </div>
       </motion.section>
