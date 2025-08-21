@@ -234,15 +234,16 @@ export default function Page({ id, center=false, children }) {
               "JavaScript (ES6+)",
               "React",
               "Next.js",
+              "Tailwind CSS",
+              "Framer Motion",
+              "Responsive Design",
               "Python",
               "C++",
               "Supabase",
-              "Tailwind CSS",
-              "Vercel",
+              "OAuth",
               "OpenAI API",
               "Git/GitHub",
-              "OAuth",
-              "Responsive Design"
+              "Vercel"
             ].map((skill) => (
               <motion.span
                 key={skill}
