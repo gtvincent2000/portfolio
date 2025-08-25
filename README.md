@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gary Vincent | Portfolio Website
 
-## Getting Started
+🌐 **Live Demo:** [https://garyvincent.dev](https://garyvincent.dev)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 About
+A personal portfolio website built with **Next.js 15**, **Tailwind CSS**, and **Vercel**.  
+It showcases my projects, skills, and career roadmap with a responsive, animated design.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ✨ Features
+- Smooth scroll animations with **Framer Motion**
+- Responsive design with **Tailwind CSS**
+- Particle background for depth
+- Timeline & Skills sections for recruiters
+- Contact form with **hCaptcha** + **Resend** email delivery
+- Deployed at **garyvincent.dev**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Tech Stack
+- **Frontend:** Next.js (App Router), React, Tailwind CSS, Framer Motion  
+- **Backend / APIs:** Next.js API Routes, Resend (email), hCaptcha  
+- **Deployment:** Vercel  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Hero Section
+![Hero Screenshot](public/readme-assets/hero.png)
 
-## Deploy on Vercel
+### Projects Section
+![Projects Screenshot](public/readme-assets/projects.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contact Section
+![Contact Screenshot](public/readme-assets/contact.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📬 Contact
+- **Portfolio:** [https://garyvincent.dev](https://garyvincent.dev)
+- **LinkedIn:** [https://www.linkedin.com/in/gary-vincent-ab1542290/](https://www.linkedin.com/in/gary-vincent-ab1542290/)
+- **Email:** gtvincent2000@gmail.com
