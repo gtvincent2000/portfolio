@@ -106,7 +106,7 @@ export default function Navbar() {
                             </div>
                             {/* Navigation Links */}
                             <a
-                                href="https://www.linkedin.com/in/gary-vincent-ab1542290/"
+                                href="https://www.linkedin.com/in/gary-vincent-dev/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline hover:text-[var(--link-hover)] transition-colors cursor-pointer"
