@@ -243,7 +243,10 @@ export default function Page({ id, center=false, children }) {
               "OAuth",
               "OpenAI API",
               "Git/GitHub",
-              "Vercel"
+              "Vercel",
+              "Leadership",
+              "Teamwork",
+              "Communication"
             ].map((skill) => (
               <motion.span
                 key={skill}
