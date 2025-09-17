@@ -67,9 +67,9 @@ const timelineItems = [
     isFuture: false
   },
   {
-    date: "Summer 2025",
+    date: "June - August 2025",
     title: "Eitan‑GO — AI Vocab Notebook",
-    tags: ["Next.js", "Tailwind", "OpenAI", "Supabase"],
+    tags: ["Full-stack", "Next.js", "Tailwind", "OpenAI", "Supabase"],
     body:
       "Self-taught React and Next js. Built a full‑stack app with AI‑generated sentences, translations, and quiz study flows. Deployed on Vercel; added auth and dark mode.",
     media: (
@@ -85,23 +85,23 @@ const timelineItems = [
     isFuture: false
   },
   {
-    date: "Summer 2025",
-    title: "Portfolio v1.0 Launch",
+    date: "August 2025",
+    title: "Portfolio Launch",
     tags: ["Next.js 15", "Animations", "Particles"],
     body:
-      "Built a portfolio with an interactive hero, scroll‑reveals, particles background, responsive project cards. Optimized for mobile performance.",
+      "Built a portfolio with an interactive hero, scroll‑reveals, particles background, responsive project cards, and a contact section. Optimized for mobile performance.",
     isFuture: false
   },
   {
     date: "Fall 2025",
-    title: "UT Dallas — Junior Year (CS)",
-    tags: ["Data Structures", "Web Dev", "C++", "JS"],
+    title: "UT Dallas — (Computer Science & Japanese Minor)",
+    tags: ["Data Structures", "Web Dev", "C++", "JS", "React", "Japanese"],
     body:
-      "Will focus on modern front‑end patterns (App Router, Framer Motion) and back‑end fundamentals. Building portfolio polish & internship prep.",
-    isFuture: true
+      "Expanding skills in full-stack web development while advancing toward a Japanese minor. Focusing on modern front-end patterns (Next.js App Router, Framer Motion) alongside back-end fundamentals, and strengthening algorithms and data structures. Preparing for internships by polishing portfolio projects and continuing AI-driven app development.",
+    isFuture: false
   },
   {
-    date: "2026 (Goal)",
+    date: "Summer 2026 & 2027(Goal)",
     title: "Software Engineering Internship",
     tags: ["Full‑stack", "AI Integration"],
     body:
@@ -109,25 +109,17 @@ const timelineItems = [
     isFuture: true
   },
   {
-    date: "2027",
+    date: "May 2028",
     title: "Complete B.S. in Computer Science (UTD)",
     tags: ["Full‑stack", "AI Integration", "Bachelor's Degree"],
     body:
-      "Graduating with strong foundations in software engineering, AI integration, and cross-cultural communication. Preparing for a Master's degree to deepen expertise in advanced software systems and AI.",
-    isFuture: true
-  },
-  {
-    date: "2027 → 2029",
-    title: "Master’s Degree in Computer Science",
-    tags: ["Full‑stack", "AI Integration", "Master's Degree"],
-    body:
-      "Specializing in AI and scalable systems, with a focus on applications for international markets. Building a portfolio of projects that integrate multilingual and cross-cultural user experiences.",
+      "Graduating with strong foundations in software engineering, UI/UX design, AI integration, and cross-cultural communication.",
     isFuture: true
   },
   {
     date: "Long-Term Goal",
     title: "Software Engineering in Japan",
-    tags: ["Full‑stack", "AI Integration", "Master's Degree"],
+    tags: ["Full‑stack", "AI Integration", "Bachelor's Degree"],
     body:
       "Pursuing opportunities with globally-minded companies in Japan, ideally American or European-headquartered, to contribute to innovative projects while fostering healthy, balanced workplace culture.",
     isFuture: true
@@ -185,18 +177,17 @@ export default function Page({ id, center=false, children }) {
           </motion.p>
 
           <motion.p variants={itemSlide} className="mt-4 text-base md:text-lg">
-            🧑🏻‍💻 {"I'm a Computer Science student with a passion for software development. I enjoy creating innovative solutions and learning new technologies."}
+            🧑🏻‍💻 {"I’m a Computer Science student with a passion for software development, focused on building innovative solutions and continually expanding my skills with emerging technologies."}
           </motion.p>
 
           <motion.p variants={itemSlide} className="mt-4 text-lg">
-            📖 {`I am a Junior at the University of Texas at Dallas, pursuing a Bachelor's degree in Computer Science.
-            I specialize in web development frameworks like React and Node.js,
-            and I have a strong foundation in programming languages such as JavaScript, Python, and C++.`}
+            📖 {`I’m pursuing a Bachelor’s degree in Computer Science at the University of Texas at Dallas (expected graduation Spring 2028) with a Japanese minor.
+                  My expertise includes web development frameworks like React and Node.js, along with strong foundations in JavaScript, Python, and C++.`}
           </motion.p>
 
           <motion.p variants={itemSlide} className="mt-4 text-lg">
-            🛠️ {"I enjoy building user-friendly interfaces and robust back-end systems. "}
-            {"My goal is to deliver high-quality software solutions that implement AI to make the user's experience more interactive and efficient."}
+            🛠️ {`I enjoy designing intuitive user interfaces and building robust back-end systems.
+                  My goal is to deliver high-quality software that leverages AI to create interactive, efficient, and globally-minded user experiences.`}
           </motion.p>
           <motion.p variants={itemSlide} className="mt-4 text-lg">
             <ResumeButton size="md" className="mt-4" />
