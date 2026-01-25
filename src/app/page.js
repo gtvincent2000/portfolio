@@ -94,14 +94,22 @@ const timelineItems = [
   },
   {
     date: "Fall 2025",
-    title: "UT Dallas — (Computer Science & Japanese Minor)",
-    tags: ["Data Structures", "Web Dev", "C++", "JS", "React", "Japanese"],
+    title: "UT Dallas — (Computer Science)",
+    tags: ["Discrete Math", "Web Dev", "UNIX/Linux", "C", "Japanese"],
     body:
-      "Expanding skills in full-stack web development while advancing toward a Japanese minor. Focusing on modern front-end patterns (Next.js App Router, Framer Motion) alongside back-end fundamentals, and strengthening algorithms and data structures. Preparing for internships by polishing portfolio projects and continuing AI-driven app development.",
+      "Expanded skills in full-stack web development while advancing toward a Japanese minor. Focused on UNIX systems, algorithm analysis, and software engineering principles.",
     isFuture: false
   },
   {
-    date: "Summer 2026 & 2027(Goal)",
+    date: "Spring 2026",
+    title: "UT Dallas — (Computer Science)",
+    tags: ["Data Structures", "Algorithm Analysis", "Japanese", "Web Dev", "Java"],
+    body:
+      "Declared Asian Studies (Japanese) minor. Continuing to build a strong foundation in computer science with advanced coursework in data structures and algorithm analysis, while furthering Japanese language skills.",
+    isFuture: false
+  },
+  {
+    date: "Summer 2027(Goal)",
     title: "Software Engineering Internship",
     tags: ["Full‑stack", "AI Integration"],
     body:
