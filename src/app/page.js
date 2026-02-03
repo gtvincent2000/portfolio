@@ -97,7 +97,7 @@ const timelineItems = [
     title: "UT Dallas — (Computer Science)",
     tags: ["Discrete Math", "Web Dev", "UNIX/Linux", "C", "Japanese"],
     body:
-      "Expanded skills in full-stack web development while advancing toward a Japanese minor. Focused on UNIX systems, algorithm analysis, and software engineering principles.",
+      "Expanded skills in full-stack web development while advancing toward a Japanese minor. Focused on UNIX systems, algorithm analysis, and software engineering principles. Updated Eitan-Go, adding kana study via charts and customizable quizzes.",
     isFuture: false
   },
   {
